@@ -1,4 +1,11 @@
 *.obj
+<<<<<<< HEAD
 *.pdb
 *.map
 *.ilk
+=======
+*.ilk
+*.map
+*.pdb
+.vs
+>>>>>>> 330596084e9f7fc070649ffdd9e6de3974b6357a
