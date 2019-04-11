@@ -1,0 +1,108 @@
+Microsoft (R) Incremental Linker Version 14.16.27027.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/?
+ uso: LINK [opzioni] [file] [@commandfile]
+
+   opzioni:
+
+      /ALIGN:#
+      /ALLOWBIND[:NO]
+      /ALLOWISOLATION[:NO]
+      /APPCONTAINER[:NO]
+      /ASSEMBLYDEBUG[:DISABLE]
+      /ASSEMBLYLINKRESOURCE:nomefile
+      /ASSEMBLYMODULE:nomefile
+      /ASSEMBLYRESOURCE:nomefile[,[nome][,PRIVATE]]
+      /BASE:{indirizzo[,dimensione]|@nomefile,chiave}
+      /CLRIMAGETYPE:{IJW|PURE|SAFE|SAFE32BITPREFERRED}
+      /CLRLOADEROPTIMIZATION:{MD|MDH|NONE|SD}
+      /CLRSUPPORTLASTERROR[:{NO|SYSTEMDLL}]
+      /CLRTHREADATTRIBUTE:{MTA|NONE|STA}
+      /CLRUNMANAGEDCODECHECK[:NO]
+      /DEBUG[:{FASTLINK|FULL|NONE}]
+      /DEF:nomefile
+      /DEFAULTLIB:libreria
+      /DELAY:{NOBIND|UNLOAD}
+      /DELAYLOAD:dll
+      /DELAYSIGN[:NO]
+      /DEPENDENTLOADFLAG:flag
+      /DLL
+      /DRIVER[:{UPONLY|WDM}]
+      /DYNAMICBASE[:NO]
+      /ENTRY:symbol
+      /ERRORREPORT:{NONE|PROMPT|QUEUE|SEND}
+      /EXPORT:symbol
+      /EXPORTPADMIN[:size]
+      /FASTGENPROFILE[:{COUNTER32|COUNTER64|EXACT|MEMMAX=#|MEMMIN=#|NOEXACT|
+                        NOPATH|NOTRACKEH|PATH|PGD=filename|TRACKEH}]
+      /FILEALIGN:#
+      /FIXED[:NO]
+      /FORCE[:{MULTIPLE|UNRESOLVED}]
+      /FUNCTIONPADMIN[:dimensione]
+      /GUARD:{CF|NO}
+      /GENPROFILE[:{COUNTER32|COUNTER64|EXACT|MEMMAX=#|MEMMIN=#|NOEXACT|
+                    NOPATH|NOTRACKEH|PATH|PGD=nomefile|TRACKEH}]
+      /HEAP:reserve[,commit]
+      /HIGHENTROPYVA[:NO]
+      /IDLOUT:nomefile
+      /IGNORE:#
+      /IGNOREIDL
+      /IMPLIB:nomefile
+      /INCLUDE:simbolo
+      /INCREMENTAL[:NO]
+      /INTEGRITYCHECK
+      /KERNEL
+      /KEYCONTAINER:nome
+      /KEYFILE:nomefile
+      /LARGEADDRESSAWARE[:NO]
+      /LIBPATH:dir
+      /LTCG[:{INCREMENTAL|NOSTATUS|OFF|STATUS|}]
+      /MACHINE:{ARM|ARM64|EBC|X64|X86}
+      /MANIFEST[:{EMBED[,ID=#]|NO}]
+      /MANIFESTDEPENDENCY:dipendenza manifesto
+      /MANIFESTFILE:nomefile
+      /MANIFESTINPUT:nomefile
+      /MANIFESTUAC[:{NO|frammento UAC}]
+      /MAP[:nomefile]
+      /MAPINFO:{EXPORTS}
+      /MERGE:da=a
+      /MIDL:@filedicomandi
+      /NATVIS:nomefile
+      /NOASSEMBLY
+      /NODEFAULTLIB[:libreria]
+      /NOENTRY
+(premere <INVIO> per continuare)
+      /NOIMPLIB
+      /NOLOGO
+      /NXCOMPAT[:NO]
+      /OPT:{ICF[=iterations]|LBR|NOICF|NOLBR|NOREF|REF}
+      /ORDER:@nomefile
+      /OUT:nomefile
+      /PDB:nomefile
+      /PDBSTRIPPED[:filename]
+      /PROFILE
+      /RELEASE
+      /SAFESEH[:NO]
+      /SECTION:nome,[[!]{DEKPRSW}][,ALIGN=#]
+      /SOURCELINK[:nomefile]
+      /STACK:reserve[,commit]
+      /STUB:filename
+      /SUBSYSTEM:{BOOT_APPLICATION|CONSOLE|EFI_APPLICATION|
+                  EFI_BOOT_SERVICE_DRIVER|EFI_ROM|EFI_RUNTIME_DRIVER|
+                  NATIVE|POSIX|WINDOWS|WINDOWSCE}[,#[.##]]
+      /SWAPRUN:{CD|NET}
+      /TLBID:#
+      /TLBOUT:nomefile
+      /TIME
+      /TSAWARE[:NO]
+      /USEPROFILE[:{AGGRESSIVE|PGD=nomefile}]
+      /VERBOSE[:{CLR|ICF|INCR|LIB|REF|SAFESEH|UNUSEDDELAYLOAD|UNUSEDLIBS}]
+      /VERSION:#[.#]
+      /WINMD[:{NO|ONLY}]
+      /WINMDDELAYSIGN[:NO]
+      /WINMDFILE:nomefile
+      /WINMDKEYCONTAINER:name
+      /WINMDKEYFILE:filename
+      /WHOLEARCHIVE[:library]
+      /WX[:NO]

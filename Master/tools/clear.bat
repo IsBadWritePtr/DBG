@@ -1,0 +1,1 @@
+@DEL /S /Q %PROJECT_OBJECT_PATH%\*.obj
