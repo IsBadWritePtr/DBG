@@ -324,12 +324,12 @@ $DLogSendExLocal(
         #ifdef _AMD64_
             szBuffer[ 0] = '0';
             szBuffer[ 1] = 'x';
-            $HexToString(szBuffer + 2, _AddressOfReturnAddress(), sizeof(ULONG_PTR));
+            $HexToString(szBuffer + 2, _ReturnAddress(), sizeof(ULONG_PTR));
             szBuffer[18] = ' ';
         #else
             szBuffer[ 0] = '0';
             szBuffer[ 1] = 'x';
-            $HexToString(szBuffer + 2, _AddressOfReturnAddress(), sizeof(ULONG_PTR));
+            $HexToString(szBuffer + 2, _ReturnAddress(), sizeof(ULONG_PTR));
             szBuffer[10] = ' ';
         #endif
 
@@ -410,12 +410,12 @@ $DLogSendExGlobal(
         #ifdef _AMD64_
             szBuffer[ 0] = '0';
             szBuffer[ 1] = 'x';
-            $HexToString(szBuffer + 2, _AddressOfReturnAddress(), sizeof(ULONG_PTR));
+            $HexToString(szBuffer + 2, _ReturnAddress(), sizeof(ULONG_PTR));
             szBuffer[18] = ' ';
         #else
             szBuffer[ 0] = '0';
             szBuffer[ 1] = 'x';
-            $HexToString(szBuffer + 2, _AddressOfReturnAddress(), sizeof(ULONG_PTR));
+            $HexToString(szBuffer + 2, _ReturnAddress(), sizeof(ULONG_PTR));
             szBuffer[10] = ' ';
         #endif
 
@@ -608,6 +608,9 @@ $DLogInitialize(
         UNICODE_STRING PipeName = CONST_UNICODE_STRING(L"\\??\\pipe\\{6F9A9D97-3E66-767D-4C3C-C09739483C20}");
 
         $DLogInitialize(&PipeName, FALSE);
+
+
+		printf("%p\n", &main);
 
         for (ULONG i = 0; i != DLG_FILTER_COUNT; i++) {
             $DLogSendExGlobal(
